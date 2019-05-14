@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 }
 img {
   height: 200px;
@@ -151,7 +152,6 @@ h2 {
 }
 p {
   font-size: 1.5rem;
-  max-width: 300px;
 }
 a {
   font-size: 1.5rem;
@@ -178,6 +178,15 @@ th {
   font-weight: bold;
   padding-right: 10px;
 }
+tr {
+  border-top: 1px solid grey;
+}
+tr:last-child {
+  border-bottom: 1px solid grey;
+}
+tr:nth-child(even) {
+  background: #e9e8e8;
+}
 td {
   font-size: 1.5rem;
   padding-right: 10px;
@@ -187,11 +196,19 @@ a {
   text-decoration: none;
   color: black;
 }
+.contact {
+  padding-top: 20px	;
+}
 .container {
-  max-width: 25%;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 nav {
   display: flex;
@@ -204,10 +221,6 @@ nav a {
 nav a:last-child {
   margin-right: 0;
 }
-.about-me {
-  display: flex;
-  margin: 20px 0;
-}
 .blurb {
   background: #e9e8e8;
   padding: 30px 5% 0;
@@ -215,6 +228,20 @@ nav a:last-child {
 .blurb button {
   margin-top: 10px;
   margin-bottom: 50px;
+  padding: 5px;
+  background: grey;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 5px;
+}
+.blurb .image-with-h1 {
+  display: flex;
+}
+.blurb .image-with-h1 h1 {
+  font-size: 3.5rem;
+}
+.blurb p {
+  margin-top: 15px;
 }
 .copyright {
   display: flex;
@@ -225,7 +252,12 @@ nav a:last-child {
 }
 .copyright p {
   font-size: 2rem;
+  color: white;
+}
+.copyright p:first-child {
+  margin-right: 2%;
 }
 .copyright a {
+  color: white;
   font-size: 2rem;
 }

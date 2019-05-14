@@ -6,6 +6,7 @@
 
     <title>My Resume</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 
     <!--[if lt IE 9]>
@@ -14,6 +15,7 @@
   </head>
 
   <body>
+
     <div class = "container">
       <nav>
         <a href="">Home</a>
@@ -21,14 +23,16 @@
         <a href="">Portfolio</a>
         <a href="">Contact</a>
       </nav>
-      <div class = "blurb">
-        <img src="img/austin-distel-1539000-unsplash.jpg" alt="Image of man in white clothes at diner">
-        <h1>Brandon Nichols - Web Dev</h1>
+      <section class = "blurb">
+        <div class = "image-with-h1">
+            <img src="img/austin-distel-1539000-unsplash.jpg" alt="Image of man in white clothes at diner">
+            <h1>Brandon Nichols - Web Dev</h1>
+        </div>
         <h3>Technobabel</h3>
         <hr>
         <p>I like programming, sleeping and contradictions</p>
         <button>My github page</button>
-      </div>
+      </section>
       <section class = "about-me">
         <div>
           <h2>Need to know</h2>
@@ -45,6 +49,7 @@
           </ul>
         </div>
       </section>
+
       <section class = "work-history">
           <h2>Work History</h2>
           <table>
@@ -74,10 +79,19 @@
             </tr>
           </table>
       </section>
-      <div class = "copyright">
-          <p>Images:</p>
-          <a href = "https://unsplash.com/photos/7uoMmzPd2JA">Unsplash</a>
+
+      <footer>
+        <address class = "contact">
+          <p>Email: brandonaronnichols@gmail.com</p>
+          <p>Phone: (361)205-7201</p>
+        </address>
+        <div class = "copyright">
+            <p>Copyright:</p>
+            <p>Images:</p>
+            <a href = "https://unsplash.com/photos/7uoMmzPd2JA" target = "_blank">Unsplash</a>
         </div>
+      </footer>
+
     </div>
   </body>
 </html>

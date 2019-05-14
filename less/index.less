@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+@Mercury: rgb(233, 232, 232);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +58,7 @@ table {
 html, body {
 	height: 100%;
 	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
 }
 
 img{
@@ -78,7 +81,6 @@ h2{
 
 p{
 	font-size: 1.5rem;
-	max-width: 300px;
 }
 
 a{
@@ -111,6 +113,18 @@ th{
 	padding-right: 10px;
 }
 
+tr{
+	border-top: 1px solid grey;
+
+	&:last-child{
+		border-bottom: 1px solid grey;
+	}
+
+	&:nth-child(even){
+		background: @Mercury;
+	}
+}
+
 td{
 	font-size: 1.5rem;
 	padding-right: 10px;
@@ -122,11 +136,21 @@ a{
 	color: black;
 }
 
+.contact{
+	padding-top: 20px	;
+}
+
 .container{
-	max-width: 25%;
+	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;	
+}
+
+.about-me{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
 }
 
 nav{
@@ -143,17 +167,30 @@ nav{
 	}
 }
 
-.about-me{
-	display: flex;
-	margin: 20px 0;
-}
-
 .blurb{
-	background: rgb(233, 232, 232);
+	background: @Mercury;
 	padding: 30px 5% 0;
+
 	button{
 		margin-top: 10px;
 		margin-bottom: 50px;
+		padding: 5px;
+		background: grey;
+		border: 1px solid grey;
+		color: white;
+		border-radius: 5px;
+	}
+
+	.image-with-h1{
+		display: flex;
+
+		h1{
+			font-size: 3.5rem;
+		}
+	}
+
+	p{
+		margin-top: 15px;
 	}
 }
 
@@ -163,10 +200,17 @@ nav{
 	margin-top: 20px;
 	padding: 10px 0;
 	background: grey;
+
 	p{
 		font-size: 2rem;
+		color: white;
+
+		&:first-child{
+			margin-right: 2%;
+		}
 	}
 	a{
+		color: white;
 		font-size: 2rem;
 	}
 }
