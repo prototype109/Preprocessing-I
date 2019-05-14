@@ -133,8 +133,99 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 img {
   height: 200px;
-  width: 300px;
+  max-width: 300px;
+}
+h1 {
+  font-size: 4.1rem;
+}
+h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+  max-width: 300px;
+}
+a {
+  font-size: 1.5rem;
+}
+ul {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+li {
+  font-size: 1.5rem;
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
+  padding-left: 5px;
+  padding-right: 113px;
+}
+li:last-child {
+  border-bottom: none;
+}
+table {
+  width: 100%;
+}
+th {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+td {
+  font-size: 1.5rem;
+  padding-right: 10px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  max-width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  margin: 10px 0;
+  margin-right: 10px;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+.about-me {
+  display: flex;
+  margin: 20px 0;
+}
+.blurb {
+  background: #e9e8e8;
+  padding: 30px 5% 0;
+}
+.blurb button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background: grey;
+}
+.copyright p {
+  font-size: 2rem;
+}
+.copyright a {
+  font-size: 2rem;
 }
