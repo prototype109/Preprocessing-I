@@ -221,6 +221,14 @@ nav a {
 nav a:last-child {
   margin-right: 0;
 }
+@media (max-width: 500px) {
+  nav {
+    position: fixed;
+    right: 0;
+    background: white;
+    width: 100vw;
+  }
+}
 .blurb {
   background: #e9e8e8;
   padding: 30px 5% 0;
@@ -239,6 +247,11 @@ nav a:last-child {
 }
 .blurb .image-with-h1 h1 {
   font-size: 3.5rem;
+}
+@media (max-width: 500px) {
+  .blurb .image-with-h1 {
+    flex-direction: column;
+  }
 }
 .blurb p {
   margin-top: 15px;
