@@ -171,7 +171,17 @@ li:last-child {
   border-bottom: none;
 }
 table {
-  width: 100%;
+  margin-top: 20px;
+  width: 50%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+@media (max-width: 500px) {
+  table {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
 }
 th {
   font-size: 1.5rem;
@@ -229,6 +239,15 @@ nav a:last-child {
     width: 100vw;
   }
 }
+.work-history div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .work-history img {
+    display: none;
+  }
+}
 .blurb {
   background: #e9e8e8;
   padding: 30px 5% 0;
@@ -259,7 +278,7 @@ nav a:last-child {
 .copyright {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 137px;
   padding: 10px 0;
   background: grey;
 }
