@@ -261,6 +261,9 @@ nav a:last-child {
   color: white;
   border-radius: 5px;
 }
+.blurb button a {
+  text-decoration: none;
+}
 .blurb .image-with-h1 {
   display: flex;
 }
